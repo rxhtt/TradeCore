@@ -98,7 +98,7 @@ export const AnalysisView: React.FC<AnalysisViewProps> = ({ settings, onSaveSess
         reader.onloadend = () => {
           if (reader.result) resolve(reader.result as string);
         };
-        reader.readAsDataURL(file);
+        reader.readAsDataURL(file as Blob);
       })
     );
 
