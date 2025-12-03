@@ -76,21 +76,17 @@ export const SettingsView: React.FC<SettingsViewProps> = ({ settings, onSave }) 
         </div>
 
         {/* Credits Section */}
-        <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 text-white shadow-xl relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-3xl -mr-10 -mt-10 transition-transform group-hover:scale-150 duration-700"></div>
-            <div className="relative z-10 text-center">
-                 <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                    <Award className="w-6 h-6 text-white" />
-                 </div>
-                 <h3 className="text-lg font-light tracking-widest uppercase opacity-80 mb-2">Architected in the Realm of Dreams</h3>
-                 <div className="h-px w-16 bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto my-4"></div>
-                 <p className="text-xl font-serif italic text-white/90">
-                    "Innovation & Concept by Rohit Bagewadi"
-                 </p>
-                 <p className="text-xs text-white/40 mt-4 tracking-wide font-medium">
-                    FORGED IN THE FIRES OF INTUITION
-                 </p>
-            </div>
+        <div className="bg-white rounded-3xl p-8 shadow-ios-sm border border-gray-100 text-center">
+             <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Award className="w-6 h-6 text-gray-900" />
+             </div>
+             <h3 className="text-xs font-semibold text-gray-400 tracking-widest uppercase mb-3">Architected in the Realm of Dreams</h3>
+             <p className="text-lg font-serif italic text-gray-900 mb-3">
+                "Innovation & Concept by Rohit Bagewadi"
+             </p>
+             <p className="text-[10px] text-gray-400 tracking-wide font-medium uppercase">
+                Forged in the fires of intuition
+             </p>
         </div>
 
         {/* System Prompt Info */}
